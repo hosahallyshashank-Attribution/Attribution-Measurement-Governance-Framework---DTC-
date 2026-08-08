@@ -1,0 +1,4 @@
+channel_name,spend,lt_roas,evidence_tier,multiplier,scepticism_override,notes
+"Example Channel 1",100000,5.0,BAC,,,"Replace with your channel name and figures"
+"Example Channel 2",50000,3.2,MDIC,0.65,,"multiplier = aaRev / LT Rev"
+"Example Channel 3",200000,1.8,IDIC,2.1,,"evidence_tier: BAC / MDIC / IDIC"

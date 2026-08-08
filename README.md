@@ -58,11 +58,12 @@ Given channel-level spend, platform ROAS, and available attribution multipliers,
 ## Installation
 
 ```bash
-git clone https://github.com/hosahally-shashank/dtc-mairf.git
+git clone https://github.com/[your-username]/dtc-mairf.git
 cd dtc-mairf
+pip install -r requirements.txt
 ```
 
-No external dependencies required — Python 3.10+ only.
+No external dependencies required beyond Python 3.10+.
 
 ---
 
@@ -93,9 +94,30 @@ python run_framework.py \
   --output outputs/
 ```
 
-**Outputs:**
+Outputs:
 - `outputs/triangulation_summary.csv` — Triangulation Summary Sheet
 - `outputs/ledger_of_assumptions.txt` — Ledger of Assumptions audit record
+
+---
+
+## Repository structure
+
+```
+dtc-mairf/
+├── README.md
+├── run_framework.py          — Main CLI entry point
+├── data/
+│   └── channel_input_template.csv
+├── core/
+│   ├── multipliers.py        — BAC/MDIC/IDIC multiplier engine
+│   ├── posture.py            — Decision Matrix posture assignment
+│   └── loa.py                — Ledger of Assumptions generator
+├── outputs/
+│   └── triangulation_sheet.py — CSV and console report generator
+└── examples/
+    ├── brand_alpha/run.py    — Brand Alpha worked example
+    └── brand_x/run.py        — Brand X worked example
+```
 
 ---
 
@@ -113,58 +135,14 @@ python run_framework.py \
 
 ---
 
-## Repository structure
-
-```
-dtc-mairf/
-├── README.md
-├── run_framework.py              — Main CLI entry point
-├── data/
-│   └── channel_input_template.csv
-├── core/
-│   ├── multipliers.py            — BAC/MDIC/IDIC multiplier engine
-│   ├── posture.py                — Decision Matrix posture assignment
-│   └── loa.py                    — Ledger of Assumptions generator
-├── outputs/
-│   └── triangulation_sheet.py    — CSV and console report generator
-└── examples/
-    ├── brand_alpha/run.py        — Brand Alpha worked example
-    └── brand_x/run.py            — Brand X worked example
-```
-
----
-
-## Sample output
-
-```
-DTC-MAIRF TRIANGULATION SUMMARY SHEET
-Brand Alpha (anonymised) — Feb–Apr 2024
-Total Media Spend: $375,946
-
-Channel                   Spend    %Bdgt  LT ROAS  aaROAS   Gap%  Tier    Posture       CFO
-FB Acquisition          $190,076   50.6%     3.3x    3.7x  -12.0% IDIC  STRATEGIC       YES
-FB Retention             $17,582    4.7%    13.7x    3.0x   78.0% MDIC  SPECULATIVE     YES
-Google Brand Search      $11,176    3.0%   92.4x    1.8x   98.0% MDIC  SPECULATIVE     YES
-Google PMAX              $93,076   24.8%    1.9x    7.0x -268.0% MDIC  SPECULATIVE     YES
-Google Non-Brand Search  $29,784    7.9%    1.6x    5.4x -238.0% IDIC  VERIFIED         NO
-
-CFO ESCALATION REQUIRED: FB Retention, Google Brand Search, Google PMAX
-```
-
----
-
 ## Citation
 
 If you use this toolkit in academic research, please cite:
 
-```bibtex
-@article{hosahally2025attribution,
-  title   = {Attribution Risk: Formalising a Governance Framework for 
-             Marketing Capital Allocation under Measurement Uncertainty},
-  author  = {Hosahally, Shashank and Sukumar, Arun and Bharadwaj, Madan},
-  journal = {[Journal TBC]},
-  year    = {2025}
-}
+```
+Hosahally, S., Sukumar, A., & Bharadwaj, M. (2025). Attribution Risk:
+Formalising a Governance Framework for Marketing Capital Allocation under
+Measurement Uncertainty. [Journal TBC].
 ```
 
 ---
@@ -180,11 +158,3 @@ MIT Licence — free to use, modify, and distribute with attribution.
 - **Shashank Hosahally** — BCU Business School / M-Squared Attribution
 - **Prof. Arun Sukumar** — Birmingham City University
 - **Madan Bharadwaj** — M-Squared Attribution
-
----
-
-## Contact
-
-For questions about the framework or toolkit, open a GitHub Issue or contact via LinkedIn.
-
----

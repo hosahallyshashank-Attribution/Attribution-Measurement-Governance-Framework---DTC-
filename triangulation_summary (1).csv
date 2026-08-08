@@ -1,0 +1,12 @@
+Channel,Spend ($),% Budget,LT ROAS,aaROAS,aaROAS (governance lower bound),Multiplier Gap %,Evidence Tier,Posture,Governance Action,CFO Escalation Required,Scepticism Range
+FB Acquisition,"$190,076",50.6%,3.3x,3.7x,3.5x,-12.0%,IDIC,STRATEGIC,CONFIDENT SCALE — CFO sign-off required,YES,0–5%
+FB Retention,"$17,582",4.7%,13.7x,3.0x,2.6x,78.0%,MDIC,SPECULATIVE,JUDGEMENT OVERRIDE — joint CMO/CFO review,YES,5–15%
+Google Brand Search,"$11,176",3.0%,92.4x,1.8x,1.6x,98.0%,MDIC,SPECULATIVE,JUDGEMENT OVERRIDE — joint CMO/CFO review,YES,5–15%
+Google Brand Shopping,"$4,465",1.2%,12.7x,0.4x,0.3x,97.0%,MDIC,SPECULATIVE,JUDGEMENT OVERRIDE — joint CMO/CFO review,YES,5–15%
+Google Non-Brand Search,"$29,784",7.9%,1.6x,5.4x,5.1x,-238.0%,IDIC,VERIFIED,OPTIMISE / SCALE — quarterly Finance review,NO,0–5%
+Google Shopping,"$3,719",1.0%,1.6x,1.6x,1.0x,0.0%,BAC,EXPLORATORY,AUTONOMOUS TEST — Safe Harbour applies,NO,10–40%
+Google PMAX,"$93,076",24.8%,1.9x,7.0x,5.9x,-268.0%,MDIC,SPECULATIVE,JUDGEMENT OVERRIDE — joint CMO/CFO review,YES,5–15%
+Google Discovery,$0,0.0%,2.0x,41.1x,34.9x,-1955.0%,MDIC,SPECULATIVE,JUDGEMENT OVERRIDE — joint CMO/CFO review,YES,5–15%
+Email,"$14,892",4.0%,36.5x,31.4x,26.7x,14.0%,MDIC,EXPLORATORY,AUTONOMOUS TEST — Safe Harbour applies,NO,5–15%
+SMS,"$11,176",3.0%,9.0x,9.0x,5.4x,0.0%,BAC,EXPLORATORY,AUTONOMOUS TEST — Safe Harbour applies,NO,10–40%
+Affiliates,$0,0.0%,0.0x,0.0x,0.0x,0.0%,BAC,EXPLORATORY,AUTONOMOUS TEST — Safe Harbour applies,NO,10–40%
